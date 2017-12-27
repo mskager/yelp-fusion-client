@@ -1,7 +1,7 @@
 package client;
 
-import client.connection.YelpFusionApiFactory;
-import client.models.AccessToken;
+import connection.YelpFusionApiFactory;
+import models.AccessToken;
 
 import org.junit.Test;
 

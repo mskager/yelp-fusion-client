@@ -7,8 +7,27 @@
     <groupId>com.anchrapp</groupId>
     <artifactId>yelp-fusion-client</artifactId>
     <version>1.0</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
     <name>Yelp Fusion Client</name>
     <description>A library for accessing Yelp fusion API</description>
+
+    <properties>
+        <maven.test.skip>true</maven.test.skip>
+    </properties>
+
+
+
     <dependencies>
         <dependency>
             <groupId>com.squareup.okhttp3</groupId>
@@ -38,7 +57,20 @@
             <artifactId>junit</artifactId>
             <version>RELEASE</version>
         </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-yaml</artifactId>
+            <version>2.9.0</version>
+        </dependency>
     </dependencies>
 
+
+
+    <distributionManagement>
+        <repository>
+            <id>maven-repository</id>
+            <url>file:///home/andrew/IdeaProjects/yelpfusionclient/</url>
+        </repository>
+    </distributionManagement>
 
 </project>
