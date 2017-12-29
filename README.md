@@ -1,1 +1,1 @@
-# yelp-fusion-client
+# yelp-fusion-com.github.mskager.client
